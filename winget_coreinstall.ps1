@@ -1,24 +1,45 @@
 ﻿# Created by Kugane
-#
+# ...
+# Updated by Nathan
 
 ### Here can you add apps that you want to configure during installation ###
 # just add the app id from winget
 $graphical = @(
-    "ClamWin.ClamWin"
+    "Spotify.Spotify"
+    "Discord.Discord"
+    "TheBrowserCompany.Arc"
+    "Doist.Todoist"
+    "9PKTQ5699M62" # iCloud
+    "PeterPawlowski.foobar2000"
+    "WinSCP.WinSCP"
+    "GitHub.cli"
+    "Notepad++.Notepad++"
+    "REALiX.HWiNFO"
+    "WireGuard.WireGuard"
+    "Anki.Anki"
+    "AndreWiethoff.ExactAudioCopy" # ripping CDs
+    "Plex.Plex"
+    "Plex.Plexamp"
+    "Tautulli.Tautulli"
+    "Valve.Steam"
+    "VideoLAN.VLC"
+    "Zoom.Zoom"
+    # drivers + system
+    "Nvidia.GeForceExperience"
+    "Syncthing.Syncthing"
+    "WinDirStat.WinDirStat"
+    # development
+    "Microsoft.VisualStudioCode"
 );
 
 ### These apps are installed silently for all users ###
 # for msstore apps you need to specify the source like below
 
 $apps = @(
+    # general
     "7zip.7zip"
-    "Foxit.FoxitReader"
     "Microsoft.VCRedist.2015+.x64"
     "Microsoft.VCRedist.2015+.x86"
-    "9NCBCSZSJRSB"          # Spotify
-    "9NKSQGP7F2NH"          # Whatsapp Desktop
-    "9WZDNCRFJ3TJ"          # Netflix
-    "9P6RC76MSMMJ"          # Prime Video
     "9N7F2SM5D1LR"          # Windows HDR Calibration
     "9PMMSR1CGPWG"          # HEIF-PictureExtension
     "9MVZQVXJBQ9V"          # AV1 VideoExtension
@@ -46,8 +67,7 @@ $bloatware = @(
     "Microsoft.Windows.Ai.Copilot.Provider"         # Copilot
 
     # default Windows 10 apps
-    "Microsoft.549981C3F5F10"           # Cortana Offline
-    "Microsoft.OneDriveSync"            # Onedrive
+    #"Microsoft.549981C3F5F10"           # Cortana Offline
     "Microsoft.3DBuilder"
     "Microsoft.BingFinance"
     "Microsoft.BingNews"
